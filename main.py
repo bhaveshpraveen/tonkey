@@ -103,25 +103,4 @@ def application(environ, start_response):
     start_response(response.status, response.headers.items())
     return iter(response)
 
-    # return handle_request_response(callback)(environ, start_response)
-
-
-
-#
-# {'REQUEST_METHOD': 'GET', 'REMOTE_ADDR': '127.0.0.1', 'SCRIPT_NAME': '',
-#  'PATH_INFO': '/', 'QUERY_STRING': '', 'CONTENT_TYPE': '', 'CONTENT_LENGTH':
-#  '', 'SERVER_NAME': 'localhost', 'SERVER_PORT': '8080', 'SERVER_PROTOCOL':
-#  'HTTP/1.1', 'HTTP_HOST': 'localhost:8080', 'HTTP_USER_AGENT': 'Mozilla/5.0
-#  (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
-#  'HTTP_ACCEPT':
-#  'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#  'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.5', 'HTTP_ACCEPT_ENCODING': 'gzip,
-#  deflate', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_COOKIE':
-#  'username-localhost-8888="2|1:0|10:1549643995|23:username-localhost-8888|44:MTMzM2MzYWZmY2E4NGJjNmI5N2E3ZmRkMzljNzIwNDM=|6d138ff0afbdf07fae1c8e250cdf452e07c7df232310ebf739e484078a775f7e";
-#  _xsrf=2|a2792db8|daf82e683001ab38cad690f7197dc936|1549599230',
-#  'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'wsgi.version': (1, 0),
-#  'wsgi.url_scheme': 'http', 'wsgi.run_once': False, 'wsgi.multithread': True,
-#  'wsgi.multiprocess': False, 'wsgi.errors': <twisted.web.wsgi._ErrorStream
-#  object at 0x10e07de48>, 'wsgi.input': <twisted.web.wsgi._InputStream object at
-#  0x10e07ddd8>}
 
