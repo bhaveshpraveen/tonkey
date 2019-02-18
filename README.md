@@ -5,7 +5,7 @@
 > "Reinventing the wheel is great if your goal is to learn more about wheels."
 > -- James Tauber
 
-A simple web framework(kinda) that is wsgi complaint.
+A simple web framework(kinda) that is wsgi compliant.
 
 Made only using the Python Standard Library (exception: Twisted)
 
