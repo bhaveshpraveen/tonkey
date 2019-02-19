@@ -61,14 +61,14 @@ To use templates, use `TemplateResponse`
 **app.py**
 
 ```python
-from Tonkey import Response, Router, TemplateResponse
+from Tonkey import Router, TemplateResponse
 
 
 def hello_framework(request, name, *args):
     return TemplateResponse('hello_world.html', context=dict(name=name))
 
 router = Router()
-router.add_route(r'/(.*)/ola/$', ola_framework)
+router.add_route(r'/(.*)/ola/$', hello_framework)
 ```
 
 `**hello_world.html**
@@ -97,7 +97,7 @@ You should see `Hello ichigo From Tonkey!! `
 The query strings from the URL can be captured in the following manner.
 
 ```python
-from Tonkey import Response, Router, TemplateResponse
+from Tonkey import Router, TemplateResponse
 
 
 def hello_framework(request, *args):
